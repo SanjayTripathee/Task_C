@@ -18,7 +18,6 @@ export const createWebUserController = expressAsyncHandler(
       password: hassPassword,
     };
     let result = await WebUser.create(data);
-    //send email with link
 
     //generate token
     let info = {
