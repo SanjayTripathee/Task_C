@@ -1,17 +1,18 @@
 import React from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
-// import AdminRegister from "./component/webUsers/AdminRegister";
+import Register from "./component/webUsers/Register";
+
 
 const ReactRouter = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<AdminRegister/>}>
+        <Route path="/" element={<Register/>}>
           {/* index on a Route, it means that this route will be rendered when the parent route's path is matched exactly. */}
 
           <Route path="admin" element={<Outlet />}>
             <Route index element={<div>This is admin dashBoard</div>}></Route>
-            <Route path="register" element={<AdminRegister />}></Route>
+            <Route path="register" element={<Register />}></Route>
           </Route>
         </Route>
 

@@ -12,7 +12,7 @@ const App = () => {
     <div>
      
         <ReactLink />
-        {/* <ReactRouter /> */}
+        <ReactRouter />
    
     </div>
   );
